@@ -1,0 +1,12 @@
+Initialize Git
+  git init
+Add File
+  git add README.md
+Commit
+  git commit -m Initial commit
+Rename Branch
+  git branch -M main
+Connect
+  git remote add origin https://github.com/username/first-project.git
+Push
+  git push -u origin main

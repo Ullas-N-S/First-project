@@ -1,0 +1,35 @@
+file 				- #to check file type
+du 				- #disk usage
+-h 				- #Human readable
+. 				- #Current Directory
+.. 				- #Parent Directory
+/ 				- #Root Directory
+~ 				- #Home Directory
+ls *.txt 			- #Finds every file ending in .txt
+rm test* 			- #Targets every file starting with "test", such as test1.log or testing_script.sh
+cp photo.jpg backup.jpg 	- #Creates a second copy named backup.jpg in the same folder.
+cp photo.jpg ./images/  	- #Moves a duplicate of the file into the images directory.
+rm 				- #remove
+cp *data* /backup 		- #Matches any file with "data" anywhere in its name
+cp *data /backup 		- #Matches any file ending with "data" in its name
+find [path] [expression] 	- #searches for files and directories in a directory 
+echo "HelloWorld" 		- #echos HelloWorld
+find . -size +100M 		- #Find files larger than 100MB
+find /home -type d 		- #Find only directories; use -type f for files
+\ 				- #For paces or to continue in next line
+-type 				- #Filters by file type
+-size 				- #Filters by size
+pwd 				- #Shows Current Working Directory
+cd -  				- #Takes you to previous working direcory 
+ls -l 				- #link flag that lists with user,group,modified time
+ls -r 				- #lists in revers alphabetical order
+ls -a 				- #lists all files and folders in the folder, even hidden
+ls -lu 				- #lists with -l flag and with the time of user last accessed
+ls -lc 				- #lists with -l flag and with the time of user last changed
+echo "New Line" >> filelist.txt - #String is appended to the file while, if not exists, then created and added
+touch mysuper 			- #Creates an empty file named mysuper. If it already exists, it updates the access and modification times to "now"
+touch -r file1.txt file2.txt 	- #Reference mode. It sets the timestamps of file2.txt to match those of file1.txt
+touch -d "2023-01-01 12:30:00" mysuperduperfile  - #Date mode. It sets the file's timestamp to the specific date and time provided instead of the current time
+stat filename 			- #Displays detailed status of a file
+which 				- #Locates the executable path of a command
+mv [old_name] [new_name]	- #To rename a file
