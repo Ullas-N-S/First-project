@@ -33,3 +33,13 @@ touch -d "2023-01-01 12:30:00" mysuperduperfile  - #Date mode. It sets the file'
 stat filename 			- #Displays detailed status of a file
 which 				- #Locates the executable path of a command
 mv [old_name] [new_name]	- #To rename a file
+cat > new.txt                   - #Creates a new text file
+cat new1.txt new2.txt           - #Displays both files content one after the other 
+cat -n new.txt                  - #displas content with every line numberd, even empty lines
+cat -b new.txt                  - #displays content with lines numbered and not empty lines
+less new.txt                    - #Used to open file with large content
+	/search_term	to search word in the file
+		n	to jump to next occurance of that word
+		N	to jump to previous occurance of that word
+	q	to quit the less viewer
+

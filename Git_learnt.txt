@@ -10,3 +10,5 @@ Connect
   git remote add origin https://github.com/username/first-project.git
 Push
   git push -u origin main
+Current Git-configuration
+  git config --list
