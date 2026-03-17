@@ -10,6 +10,8 @@ rm test* 			- #Targets every file starting with "test", such as test1.log or tes
 cp photo.jpg backup.jpg 	- #Creates a second copy named backup.jpg in the same folder.
 cp photo.jpg ./images/  	- #Moves a duplicate of the file into the images directory.
 rm 				- #remove
+rm -i                           - #remove with interactive flag that asks before performing for each file
+rm -v				- #remove with verbose flag to display a message in the terminal for every file that is successfully deleted
 cp *data* /backup 		- #Matches any file with "data" anywhere in its name
 cp *data /backup 		- #Matches any file ending with "data" in its name
 find [path] [expression] 	- #searches for files and directories in a directory 
@@ -37,9 +39,15 @@ cat > new.txt                   - #Creates a new text file
 cat new1.txt new2.txt           - #Displays both files content one after the other 
 cat -n new.txt                  - #displas content with every line numberd, even empty lines
 cat -b new.txt                  - #displays content with lines numbered and not empty lines
+cp -f mycoolfile /home/pete/Pictures	- #-f flag to force copy
+cp -p mycoolfile /home/pete/backups/	- #Preserving File Attributes with cp -p
 less new.txt                    - #Used to open file with large content
 	/search_term	to search word in the file
 		n	to jump to next occurance of that word
 		N	to jump to previous occurance of that word
 	q	to quit the less viewer
+history                         - #To display History of commands
+	Ctrl+R		to reverse search
+	history -c 	to clear complete history
+	history -d 101	to delete 101th command from history
 
